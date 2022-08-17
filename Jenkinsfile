@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'yarn install'
+                   echo 'building the app'
             }
         }
         stage('test') {
               steps {
-                   echo 'building the app'
+                   echo 'testing the app'
               }
         }
         stage('deploy') {
